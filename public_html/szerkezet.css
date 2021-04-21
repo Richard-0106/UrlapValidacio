@@ -44,6 +44,10 @@ main{
             "f";
         width:100%;
     }
+    nav ul{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
     nav{
         width:100%;
     }
@@ -67,10 +71,6 @@ main{
         width:100%;
   
 }
+
 }
-@media screen and (max-width:950px){
-    nav ul{
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-    }
-}
+
