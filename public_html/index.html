@@ -20,10 +20,11 @@ and open the template in the editor.
                 <h1>Üdvözöljük a weblapunkon!</h1>
             </header>
             <nav>
-                <a href="index.html">Űrlap</a>
-                <a href="#">Menü 1</a> 
-                <a href="#">Menü 2</a>
-
+                <ul>
+                    <li><a href="index.html">Űrlap</a></li>
+                    <li> <a href="#">Menü 1</a> </li>
+                    <li><a href="#">Menü 2</a></li>
+                </ul>
             </nav>
             <article>
                 <h2>Kérem adja meg az adatait!</h2>
@@ -31,33 +32,51 @@ and open the template in the editor.
                     <fieldset>
                         <div class="urlapelem"   >
                             <label for="nev">Név</label>
-                            <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
+                            <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" ><br>
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="valaki@vmi.hu" >
+                            <input type="email" name="email" id="email" placeholder="valaki@vmi.hu" ><br>
                             <label for="email">E-mail újra</label>
-                            <input type="email" name="email" id="email" placeholder="valaki@vmi.hu" >
-                             <label for="number">Telefonszám</label>
-                            <input type="number" name="number" id="number" placeholder="06-30-333-444" >
-
-
-
+                            <input type="email" name="email" id="emailUjra" placeholder="valaki@vmi.hu" ><br>
+                            <label for="number">Telefonszám</label>
+                            <input type="text" name="number" id="number" placeholder="06-30-333-444" ><br>
                         </div> 
                     </fieldset>
-                    <input type ="button" id="kuld" value="Küld">
+                    <fieldset>
+                        
+                         <label for="weboldal">Weboldal</label>
+                         <input type="text" name="weboldal" id="weboldal" placeholder="http://valami.hu"><br>
+                       
+                         <label for="cars">Prioritás</label>
+                         <select name="cars" id="cars">
+    
+                        <option value="alacsony">alacsony</option>
+                        <option value="kozepes">Közepes</option>
+                        <option value="magas">Magas</option>
+                        </select>
+                        <br>
+                         <label >Üzenet</label>
+                        <textarea rows="10" cols="45"></textarea>
+                        <br>
+                    </fieldset>
+                    <input type ="button" id="kuld" value="Küld"><br>
+                    <input type ="button" id="torol" value="Töröl">
                     </article>
                     <aside>
                         <section>
+                            <div id="hatter">
                             <h3>
                                 Űrlap validáció</h3>
                             <p>
                                 Itt jelenik majd meg, hoyg van-e hiba az űrlap kitöltésekor. Például űres mező, vagy nem megfelelő formátumú e-mail cím, weboldal, telefonszám.
                             </p>
-
+                            </div>
                         </section>
                         <section>
+                            <div id="hatter">
                             <h3>Űrlap adatok</h3>
                             <p>
                                 Itt jelennek majd meg a z űrlapon megadott adatok  </p>
+                            </div>
                         </section>
 
 

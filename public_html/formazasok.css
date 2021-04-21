@@ -1,10 +1,54 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2021.04.14., 14:09:41
-    Author     : Ricsi
-*/
+@charset "utf-8";
+header{
+    background-color:orange;
+}
+nav{
+    background-color:greenyellow;
+    
+}
+nav li {
+    list-style-type: none;
+    padding-right: 35px;  
+}
+nav a{
+    text-decoration: none;
+}
+article{
+    background-color:coral;
+}
+aside{
+    background-color:cadetblue;
+}
+footer{
+    background-color:bisque;
+}
+#hatter{
+    background-color:khaki;
+}
+aside section:nth-child(2) p{
+    color:pink;
+}
+fieldset{
+    margin-bottom: 5px;
+   
+}
+#kuld{
+    float: right;
+    margin-right: 20px;
+    padding-left:80px;
+    padding-right:80px;
+}
+#torol{
+    padding-left:30px;
+    padding-right:30px;
+}
+.urlapelem{
+    float: right;
+}
+input{
+    margin-bottom: 5px;
+}
 
+/*input #email{
+    clear:both;
+}*/

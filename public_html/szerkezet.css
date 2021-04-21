@@ -1,10 +1,76 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2021.04.14., 14:10:01
-    Author     : Ricsi
-*/
-
+@charset "utf-8";
+header,nav,article,footer,aside,#hatter{
+    padding:3px;
+    margin:3px;
+    border:1px solid black;
+}
+main{
+    width: 80%;
+    max-width: 1250px;
+    margin:auto;
+    background:white;
+}
+header{
+    grid-area:h;
+}
+nav{
+    grid-area:n;
+}
+article{
+    grid-area:a;
+}
+footer{
+    grid-area:f;
+}
+aside{
+    grid-area:as;
+}
+main{
+    display:grid;
+    grid-template-areas:
+        "h h h h h"
+        "n a a a as"
+        "f f f f f";
+    grid-gap:0px;
+}
+@media screen and (max-width:850px){
+    main{
+        
+        grid-template-areas:
+            "h "
+            "n"
+            "a"
+            "as"
+            "f";
+        width:100%;
+    }
+    nav{
+        width:100%;
+    }
+    header{
+        width:100%;
+    }
+    footer{
+        width:100%;
+    }
+.urlapelem{
+    float:left;
+}
+    
+    fieldset{
+        width:100%;
+    }
+    article{
+        width:100%;
+    } 
+    aside{
+        width:100%;
+  
+}
+}
+@media screen and (max-width:950px){
+    nav ul{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
